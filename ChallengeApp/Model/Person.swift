@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Person : Identifiable {
+struct Person : Identifiable { //Ensure these conforms to Identifiable
     var id = UUID()
     var name: String
     var address: String
