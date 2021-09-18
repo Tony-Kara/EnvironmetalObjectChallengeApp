@@ -11,10 +11,10 @@
 		04DB2C0B26F58621004D1981 /* PersonTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB2C0A26F58621004D1981 /* PersonTabView.swift */; };
 		04DB2C0D26F58624004D1981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DB2C0C26F58624004D1981 /* Assets.xcassets */; };
 		04DB2C1026F58624004D1981 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DB2C0F26F58624004D1981 /* Preview Assets.xcassets */; };
-		04DB2C1C26F58697004D1981 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB2C1B26F58697004D1981 /* Person.swift */; };
 		04DB2C1E26F5885E004D1981 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB2C1D26F5885E004D1981 /* PersonModel.swift */; };
 		04DB2C2026F58A26004D1981 /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB2C1F26F58A26004D1981 /* PersonListView.swift */; };
 		04DB2C2226F58A45004D1981 /* PersonOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB2C2126F58A45004D1981 /* PersonOptionView.swift */; };
+		04DB2C2826F6044A004D1981 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB2C2726F6044A004D1981 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		04DB2C0C26F58624004D1981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DB2C0F26F58624004D1981 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04DB2C1126F58624004D1981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04DB2C1B26F58697004D1981 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../../../Person.swift; sourceTree = "<group>"; };
 		04DB2C1D26F5885E004D1981 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		04DB2C1F26F58A26004D1981 /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		04DB2C2126F58A45004D1981 /* PersonOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonOptionView.swift; sourceTree = "<group>"; };
+		04DB2C2726F6044A004D1981 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		04DB2C0726F58621004D1981 /* ChallengeApp */ = {
 			isa = PBXGroup;
 			children = (
-				04DB2C1726F58630004D1981 /* Model */,
+				04DB2C2626F6041F004D1981 /* Model */,
 				04DB2C1826F58638004D1981 /* View */,
 				04DB2C1A26F5867B004D1981 /* ViewModel */,
 				04DB2C0826F58621004D1981 /* ChallengeAppApp.swift */,
@@ -79,14 +79,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		04DB2C1726F58630004D1981 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				04DB2C1B26F58697004D1981 /* Person.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		04DB2C1826F58638004D1981 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +95,14 @@
 				04DB2C1D26F5885E004D1981 /* PersonModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04DB2C2626F6041F004D1981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DB2C2726F6044A004D1981 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DB2C2826F6044A004D1981 /* Person.swift in Sources */,
 				04DB2C1E26F5885E004D1981 /* PersonModel.swift in Sources */,
-				04DB2C1C26F58697004D1981 /* Person.swift in Sources */,
 				04DB2C2226F58A45004D1981 /* PersonOptionView.swift in Sources */,
 				04DB2C0B26F58621004D1981 /* PersonTabView.swift in Sources */,
 				04DB2C0926F58621004D1981 /* ChallengeAppApp.swift in Sources */,

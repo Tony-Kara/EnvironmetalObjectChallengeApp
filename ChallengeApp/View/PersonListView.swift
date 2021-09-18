@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct PersonListView: View {
+    @EnvironmentObject var model: PersonModel
+    var person: Person
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(alignment: .leading) {
+            
+            if model.showName {
+                Text("Name: \(person.name)")
+            }
+            
+            if model.showAddress {
+                Text("Address: \(person.address)")
+            }
+            
+            if model.showCompany {
+                Text("Company: \(person.company)")
+            }
+            
+            if model.showYears {
+                Text("Years of Experience: \(person.yearsOfExperience)")
+            }
+        
+        }
+      
+        
     }
 }
 
 struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonListView()
+        PersonListView(person: Person(
+            name: "Mamma Mia",
+            address: "123 Candy Lane",
+            company: "CodeWithChris",
+            yearsOfExperience: 99
+        ))
+            .environmentObject(PersonModel())
     }
 }

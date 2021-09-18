@@ -12,6 +12,7 @@ struct ChallengeAppApp: App {
     var body: some Scene {
         WindowGroup {
             PersonTabView()
+                .environmentObject(PersonModel())
         }
     }
 }

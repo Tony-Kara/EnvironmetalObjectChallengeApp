@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PersonOptionView: View {
+    @EnvironmentObject var model: PersonModel
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -16,5 +17,6 @@ struct PersonOptionView: View {
 struct PersonOptionView_Previews: PreviewProvider {
     static var previews: some View {
         PersonOptionView()
+            .environmentObject(PersonModel())
     }
 }
